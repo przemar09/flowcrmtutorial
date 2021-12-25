@@ -19,7 +19,10 @@ import com.vaadin.flow.component.dependency.NpmPackage;
  */
 @SpringBootApplication
 @Theme(value = "flowcrmtutorial")
-@PWA(name = "Flow CRM Tutorial", shortName = "Flow CRM Tutorial", offlineResources = {"images/logo.png"})
+@PWA(name = "Vadin CRM",
+        shortName = "CRM",
+        offlinePath = "offline.html",
+        offlineResources = {"images/logo.png", "images/offline.png"})
 @NpmPackage(value = "line-awesome", version = "1.3.0")
 public class Application extends SpringBootServletInitializer implements AppShellConfigurator {
 
